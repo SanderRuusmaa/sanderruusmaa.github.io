@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgba(17, 98, 219, 0.781) !important;
+}
+
+.navBar {
+  width: 100%;
+  position: relative;
+  left: 0%;
+}
+
+.navBar img {
+  width: 300px;
+}
+
+header {
+  min-height: 120vh;
+  position: relative;
+  background: #fffff1;
+}
+
+header .intro-text {
+  font-family: 'Jura', sans-serif;
+  font-size: 80px;
+  color: white;
+}
+
+header .intro-text .film {
+  position: absolute;
+  top: 38%;
+  left: 33%;
+}
+
+header .intro-text .prod {
+  position: absolute;
+  top: 48%;
+  left: 39%;
+}
+
+header .intro-text .service {
+  position: absolute;
+  margin-right: 50px;
+  top: 58%;
+  left: 58%;
+}
+
+header h1 {
+  font-size: 5.5rem;
+}
+
+.desyncLogo:hover {
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+button {
+  border-color: transparent;
+}
+
+.burger {
+  background-color: transparent;
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.678);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .nav-item {
+  position: relative;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5em;
+  left: 9%;
+  padding-left: 21px;
+}
+
+.navbar-dark .nav-item .nav-link {
+  color: black;
+}
+
+.bg-dark {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: transparent;
+}
+
+button:focus {
+  outline: transparent;
+}
+
+@media screen and (max-width: 991px) {
+  .burger {
+    display: block;
+  }
+  .burger div {
+    background-color: black;
+  }
+  .film {
+    font-size: 4rem !important;
+    left: 6% !important;
+  }
+  .prod {
+    font-size: 4rem !important;
+    left: 8% !important;
+  }
+  .service {
+    left: 40% !important;
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+          transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
+}
+/*# sourceMappingURL=styles_portfolio.css.map */
