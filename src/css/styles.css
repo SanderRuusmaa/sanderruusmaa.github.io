@@ -8,12 +8,14 @@
 html {
   scroll-behavior: smooth;
   height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 body {
   overflow-x: hidden;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  position: relative;
 }
 
 a {
