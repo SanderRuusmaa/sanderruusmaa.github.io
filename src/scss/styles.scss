@@ -637,17 +637,20 @@ button:focus {
         padding-top: 1rem;
         padding-bottom: 1rem;
         display: block;
+        position: relative;
+        transform: translateX(-15px);
     }
     .film{
-        font-size: 4rem!important;
-        left:6%!important;
+        font-size: 3rem!important;
+        width: 100%!important;
+        left:10px!important;
     }
     .prod{
-        font-size: 4rem!important;
-        left:8%!important;
+        font-size: 3.5rem!important;
+        left:20px!important;
     }
     .service{
-        left:40%!important;
+        left:20%!important;
     }
     .navbar-dark .nav-item {
         position: relative;
