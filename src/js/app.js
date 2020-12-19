@@ -6,34 +6,6 @@ $( document ).ready(function(){
   });
 })
 
-function parallaxAlla(element, distance, speed) {
-    const item = document.querySelector(element);
-    item.style.transform = `translateY(${distance * speed}px)`;
-    
-}
-
-function parallaxYles(element, distance, speed) {
-    const item = document.querySelector(element);
-    item.style.transform = `translateY(${distance * -speed}px)`;
-}
-
-function parallaxParemale(element, distance, speed, sync) {
-    const item = document.querySelector(element);
-    item.style.transform = `translate(${distance * speed}px, ${distance * sync}px)`;
-}
-
-
-function backToHome() {
-    window.scrollTo(0,0);
-}
-
-
-window.addEventListener("scroll", function() {
-    parallaxYles(".film", window.scrollY, 3);
-    parallaxAlla(".prod", window.scrollY, 0.7);
-    //parallaxParemale(".service", window.scrollY, 3, 0.7);
-})
-
 const submitSlide = () =>{
     const submitBtn = document.querySelector('.submitBtn');
     const submitForm = document.querySelector('.submit-form');
@@ -67,6 +39,35 @@ ScrollTrigger.create({
     once:true
 });
 
+//parallax of intro
+gsap.to(".film",{
+    scrollTrigger: {
+        trigger: '.intro',
+        start: "50% 50%",
+        scrub:0.7,
+        markers:true
+    },
+    y:-1000
+})
+
+gsap.to(".prod",{
+    scrollTrigger: {
+        trigger: '.intro',
+        start: "50% 50%",
+        scrub:0.7,
+        markers:true
+    },
+    y:600
+})
+gsap.to(".service",{
+    scrollTrigger: {
+        trigger: '.intro',
+        start: "50% 50%",
+        scrub:0.7,
+        markers:true
+    },
+    x:1000
+})
 
 //parallax descript
 gsap.to(".description",{
