@@ -719,35 +719,41 @@ header .intro {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-}
-
-header .intro h2 {
   font-size: 4em;
+  margin: auto;
 }
 
 .established {
   z-index: 10;
   background-color: #222221;
-  height: 120vh;
+  height: 115vh;
   overflow-y: hidden;
   min-height: 800px;
+  background: url(../imgs/filmstrip1.png), #201f20;
+  background-size: 70px;
+  background-repeat: repeat;
+  background-position: 0% 0%;
 }
 
 .established .est-img {
   position: relative;
   filter: invert(100%);
   -webkit-filter: invert(100%);
+  width: 21vw;
+  min-width: 300px;
+  opacity: 40%;
 }
 
 .established .est-story {
   width: 70%;
   position: relative;
   left: 20%;
+  margin-top: 50px;
 }
 
 .established .est-story h3 {
   color: white;
-  font-size: 3.5vw;
+  font-size: calc(10px + 2.5vw);
 }
 
 .focus {
@@ -766,7 +772,7 @@ header .intro h2 {
 
 .focus #bot-logo {
   opacity: 100%;
-  width: 400px;
+  width: 350px;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -788,6 +794,7 @@ header .intro h2 {
 }
 
 .focus .focus-story h1 {
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -796,6 +803,7 @@ header .intro h2 {
   z-index: 5;
   position: absolute;
   right: 50px;
+  bottom: 40px;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
   border-radius: 20px;
@@ -845,7 +853,6 @@ header .intro h2 {
   .established .est-img {
     width: 100%;
     position: relative;
-    opacity: 40%;
   }
   .established .est-story {
     width: 90%;
@@ -875,6 +882,8 @@ header .intro h2 {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: ease-in;
+    transition: ease-in;
   }
   .focus .focus-story {
     width: 100%;
@@ -884,8 +893,17 @@ header .intro h2 {
   .focus .focus-story h2, .focus .focus-story h3 {
     font-size: 1.5rem;
   }
+  .focus .focus-story h1 {
+    font-size: 3rem;
+  }
   .focus .contact-info {
     bottom: 50px;
+    right: 0;
+  }
+  .intro {
+    display: block;
+    width: 80%;
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -135,7 +135,6 @@ p{
 header{
     height: 120vh;
     position: relative;
-    //linear-gradient(270deg, #222324, #000000) 
     background: url(../imgs/filmstrip1.png), #201f20;
     background-size:70px;
     background-repeat: repeat;
@@ -755,9 +754,8 @@ header{
         left:50%;
         transform: translate(-50%,-50%);
         text-align: center;
-        h2{
-            font-size: 4em;
-        }
+        font-size: 4em;
+        margin: auto;
     }
 }
 
@@ -765,21 +763,29 @@ header{
     z-index: 10;
     //background-color: rgb(254, 255, 238);
     background-color: rgb(34, 34, 33);
-    height: 120vh;
+    height: 115vh;
     overflow-y: hidden;
     min-height: 800px;
+    background: url(../imgs/filmstrip1.png), #201f20;
+    background-size:70px;
+    background-repeat: repeat;
+    background-position: 0% 0%;
     .est-img{
         position: relative;
         filter:invert(100%);
         -webkit-filter: invert(100%);
+        width: 21vw;
+        min-width: 300px;
+        opacity: 40%;
     }
     .est-story{
         width: 70%;
         position: relative;
         left:20%;
+        margin-top: 50px;
         h3{
             color:white;
-            font-size: 3.5vw;
+            font-size:calc(10px + 2.5vw);;
         }
     }
    
@@ -799,7 +805,7 @@ header{
     }
     #bot-logo{
         opacity: 100%;
-        width: 400px;
+        width: 350px;
         position: absolute;
         bottom: 10px;
         left: 50%;
@@ -811,6 +817,7 @@ header{
             font-size:calc(12px + 1.1vw);
         }
         h1{
+            font-size: 4rem;
             text-align: center;
         }
         position: relative;
@@ -839,6 +846,7 @@ header{
         }
         position: absolute;
         right: 50px;
+        bottom:40px;
         transform: translateX(120%);
         border-radius: 20px;
         display: flex;
@@ -865,7 +873,6 @@ header{
         .est-img{
             width: 100%;
             position: relative;
-            opacity: 40%;
         }
         .est-story{
             width: 90%;
@@ -889,6 +896,7 @@ header{
             width: 95%;
             margin-left: auto;
             margin-right: auto;
+            transition: ease-in;
         }
         .focus-story{
             width: 100%;
@@ -897,10 +905,19 @@ header{
             h2,h3{
                 font-size:1.5rem;
             }
+            h1{
+                font-size: 3rem;
+            }
         }
         .contact-info{
             bottom: 50px;
+            right: 0;
             
         }
+    }
+    .intro{
+        display: block;
+        width: 80%;
+        padding: 20px;
     }
 }
