@@ -7,14 +7,12 @@
 
 html {
   scroll-behavior: smooth;
-  height: -webkit-fill-available;
   overflow-x: hidden;
 }
 
 body {
   overflow-x: hidden;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   position: relative;
   width: 100%;
 }
@@ -526,6 +524,16 @@ section .row p {
   text-align: center;
 }
 
+.idea .submit-form .submit-form-content a {
+  color: black;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
+}
+
+.idea .submit-form .submit-form-content a:hover {
+  color: #f0e4ce !important;
+}
+
 .idea .submit-form .exit {
   position: relative;
   background-color: transparent;
@@ -618,11 +626,11 @@ button:focus {
   .film {
     font-size: 3rem !important;
     width: 100% !important;
-    left: 10px !important;
+    left: 7% !important;
   }
   .prod {
     font-size: 3.5rem !important;
-    left: 20px !important;
+    left: 10% !important;
   }
   .service {
     left: 20% !important;
@@ -717,85 +725,167 @@ header .intro h2 {
   font-size: 4em;
 }
 
-.story {
-  background-color: #feffee;
-  height: 100%;
+.established {
+  z-index: 10;
+  background-color: #222221;
+  height: 120vh;
+  overflow-y: hidden;
+  min-height: 800px;
 }
 
-.story .line {
+.established .est-img {
   position: relative;
-  left: 100px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
-.story .story-text h3 {
-  font-size: 2.5rem;
+.established .est-story {
+  width: 70%;
+  position: relative;
+  left: 20%;
 }
 
-.story #partOne {
+.established .est-story h3 {
+  color: white;
+  font-size: 3.5vw;
+}
+
+.focus {
+  background-color: #feffee;
+  height: 1000px;
+}
+
+.focus #oliver {
+  border-radius: 3px;
+  width: 35vw;
+  min-width: 450px;
   position: absolute;
-  top: -60px;
-  left: 250px;
-  width: 60%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  right: 0;
+  top: 150px;
 }
 
-.story #partTwo {
+.focus #bot-logo {
+  opacity: 100%;
+  width: 400px;
   position: absolute;
-  top: 1050px;
-  left: 250px;
-  width: 60%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.story #partThree {
+.focus .focus-story {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  text-align: justify;
+  width: 50%;
+  padding: 30px;
+}
+
+.focus .focus-story h2, .focus .focus-story h3 {
+  font-size: calc(12px + 1.1vw);
+}
+
+.focus .focus-story h1 {
+  text-align: center;
+}
+
+.focus .contact-info {
+  opacity: 85%;
+  z-index: 5;
   position: absolute;
-  top: 230px;
-  left: 250px;
-  width: 60%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  right: 50px;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #222221;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.focus .contact-info h2, .focus .contact-info h3 {
+  padding: 10px;
+  color: white;
+}
+
+.focus .contact-info h2 img, .focus .contact-info h3 img {
+  width: 50px;
+}
+
+.focus .contact-info h2 a, .focus .contact-info h3 a {
+  color: #ebbb39;
+}
+
+.focus .contact-info h2 {
+  text-align: center;
+}
+
+.focus .contact-info:hover {
+  opacity: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-info h2, .contact-info h3 {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .story .line {
-    left: 30px;
+  .established .est-img {
+    width: 100%;
+    position: relative;
+    opacity: 40%;
   }
-  .story-text {
-    left: 150px !important;
+  .established .est-story {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: auto;
   }
-}
-
-.point1 {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: 60px 60px;
-          transform-origin: 60px 60px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.point2 {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: 60px 1195px;
-          transform-origin: 60px 1195px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.point3 {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: 60px 2460px;
-          transform-origin: 60px 2460px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-footer {
-  height: 40vh;
-  background-color: #feffee;
+  .established .est-story h3 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .focus {
+    height: 1600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .focus #oliver {
+    position: relative;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .focus .focus-story {
+    width: 100%;
+    padding: 20px;
+    left: 0;
+  }
+  .focus .focus-story h2, .focus .focus-story h3 {
+    font-size: 1.5rem;
+  }
+  .focus .contact-info {
+    bottom: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
