@@ -58,7 +58,7 @@ t3.from("#whatdowedo", {scale:0.2,opacity:0, duration:1})
 t3.from("#abouttext1",{opacity:0, delay:0.1, duration:0.7})
 t3.from("#abouttext2",{opacity:0, delay:0.1, duration:0.7})
 t3.from("#abouttext3",{opacity:0, delay:0.1, duration:0.7})
-t3.from("#oliver", {"transform":"translateX(100%)"})
+t3.from("#oliver", {"transform":"translateX(100%)",duration:0.5})
 
 //about us intro text fade in
 gsap.fromTo(".about-intro", {opacity:0}, {opacity:1,delay:0.3, duration:2, "transition":"ease-out"});

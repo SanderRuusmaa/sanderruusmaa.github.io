@@ -868,7 +868,7 @@ header .about-intro {
     font-size: 2.5rem;
   }
   .focus {
-    height: 1700px;
+    height: 1750px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -882,8 +882,6 @@ header .about-intro {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transition: ease-in;
-    transition: ease-in;
   }
   .focus .focus-story {
     width: 100%;
@@ -897,7 +895,7 @@ header .about-intro {
     font-size: 2.7rem;
   }
   .focus .contact-info {
-    bottom: 50px;
+    bottom: 70px;
     right: 0;
   }
   .about-intro {

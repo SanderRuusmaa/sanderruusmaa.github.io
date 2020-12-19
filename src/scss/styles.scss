@@ -888,7 +888,7 @@ header{
         }
     }
     .focus{
-        height: 1700px;
+        height: 1750px;
         display: flex;
         flex-direction: column;
         #oliver{
@@ -896,7 +896,6 @@ header{
             width: 95%;
             margin-left: auto;
             margin-right: auto;
-            transition: ease-in;
         }
         .focus-story{
             width: 100%;
@@ -910,7 +909,7 @@ header{
             }
         }
         .contact-info{
-            bottom: 50px;
+            bottom: 70px;
             right: 0;
             
         }
