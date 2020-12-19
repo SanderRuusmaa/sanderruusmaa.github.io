@@ -45,7 +45,6 @@ gsap.to(".film",{
         trigger: '.intro',
         start: "50% 50%",
         scrub:0.7,
-        markers:true
     },
     y:-1000
 })
@@ -55,7 +54,6 @@ gsap.to(".prod",{
         trigger: '.intro',
         start: "50% 50%",
         scrub:0.7,
-        markers:true
     },
     y:600
 })
@@ -64,7 +62,6 @@ gsap.to(".service",{
         trigger: '.intro',
         start: "50% 50%",
         scrub:0.7,
-        markers:true
     },
     x:1000
 })
