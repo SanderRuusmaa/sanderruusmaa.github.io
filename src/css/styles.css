@@ -709,7 +709,7 @@ header {
   min-height: 700px;
 }
 
-header .intro {
+header .about-intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,7 +868,7 @@ header .intro {
     font-size: 2.5rem;
   }
   .focus {
-    height: 1600px;
+    height: 1700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -894,14 +894,13 @@ header .intro {
     font-size: 1.5rem;
   }
   .focus .focus-story h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .focus .contact-info {
     bottom: 50px;
     right: 0;
   }
-  .intro {
-    display: block;
+  .about-intro {
     width: 80%;
     padding: 20px;
   }

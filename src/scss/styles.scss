@@ -747,7 +747,7 @@ button:focus {
 header{
     height: 110vh;
     min-height: 700px;
-    .intro{
+    .about-intro{
         display: flex;
         position: absolute;
         top:50%;
@@ -888,7 +888,7 @@ header{
         }
     }
     .focus{
-        height: 1600px;
+        height: 1700px;
         display: flex;
         flex-direction: column;
         #oliver{
@@ -906,7 +906,7 @@ header{
                 font-size:1.5rem;
             }
             h1{
-                font-size: 3rem;
+                font-size: 2.7rem;
             }
         }
         .contact-info{
@@ -915,8 +915,7 @@ header{
             
         }
     }
-    .intro{
-        display: block;
+    .about-intro{
         width: 80%;
         padding: 20px;
     }
