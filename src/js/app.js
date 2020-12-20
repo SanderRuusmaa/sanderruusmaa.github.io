@@ -66,6 +66,7 @@ gsap.to(".service",{
     x:1000
 })
 
+
 //parallax descript
 gsap.to(".description",{
     scrollTrigger: {
@@ -95,6 +96,8 @@ let t1 = gsap.timeline({
     scrollTrigger: {
         trigger: '#fromshort',
         start: "0% 50%",
+        toggleActions:"play none play none",
+        markers:true
     }
 });
 
