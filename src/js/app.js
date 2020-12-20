@@ -95,9 +95,8 @@ gsap.to(".intro",{
 let t1 = gsap.timeline({
     scrollTrigger: {
         trigger: '#fromshort',
-        start: "0% 50%",
+        start: "0% 40%",
         toggleActions:"play none play none",
-        markers:true
     }
 });
 
