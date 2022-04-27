@@ -1,0 +1,139 @@
+:root {
+	--datelRoheline: #0096aa
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,150,170,0.20473208814775912) 100%);
+}
+p,h1,h2,h3,h4,h5 {
+	font-family: 'Roboto', sans-serif;
+}
+.sisu {
+	transform-style: preserve-3d;
+	position: relative;
+	min-height: 100vh;
+	min-width: 750px;
+	perspective: 1500px;
+}
+
+.konteiner {
+	transform-style: preserve-3d;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin: 0;
+	transform: translateY(25%);
+	height: 100%;
+}
+
+.kaart {
+	position: relative;
+	min-width: 700px;
+	width: 70%;
+	max-width: 1050px;
+	min-height: 580px;
+
+	transform-style: preserve-3d;
+	background: rgb(255,255,255);
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 6px 7px 24px -7px rgba(0,0,0,0.31);
+	-webkit-box-shadow: 6px 7px 24px -7px rgba(0,0,0,0.31);
+	-moz-box-shadow: 6px 7px 24px -7px rgba(0,0,0,0.31);
+}
+
+.heading {
+	transform-style: preserve-3d;
+	text-align: center;
+	color: var(--datelRoheline);
+	position: relative
+}
+
+.flex-split {
+	transform-style: preserve-3d;
+	display: flex;
+}
+
+.flex-split .forty {
+	transform-style: preserve-3d;
+	width: 40%;
+}
+
+.pilt #mina {
+	position: relative;
+	width: 100%;
+	border-radius: 1000px;
+	transition: all 0.1s ease-out;
+}
+
+.flex-split .sixty {
+	width: 60%;
+}
+
+.rida {
+	display: flex;
+	margin: 15px 10px;
+}
+
+.rida .point{
+	width: 130px;
+	text-align: right;
+}
+
+.rida .point-descript ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.rida .point-descript {
+	margin-left: 10px;
+}
+
+.rida h3, .rida p {
+	margin:0;
+	line-height: 15px
+}
+
+.rida h3 {
+	color: var(--datelRoheline)
+}
+
+#datel-logo {
+	position: absolute;
+	width: 250px;
+	right: 50px;
+	top:20px;
+	transition: all 0.1s ease-out;
+}
+
+#kaamera {
+	width: 200px;
+	position: absolute;
+	right: 10px;
+	bottom: 40px;
+	transform: rotate(-10deg);
+	transition: all 0.1s ease-out;
+}
+
+#subaru {
+	width: 200px;
+	border-radius: 100px;
+	position: absolute;
+	bottom:40px;
+	right: 220px;
+	transform: rotate(8deg);
+	transition: all 0.1s ease-out;
+}
+
+#trenn {
+	width: 130px;
+	position: absolute;
+	bottom: 40px;
+	right: 440px;
+	transform: rotate(-3deg);
+	transition: all 0.1s ease-out;
+}
